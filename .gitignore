@@ -1,0 +1,9 @@
+ProjectSettings/
+obj/
+Library/
+Temp/
+Assembly-CSharp.csproj
+Assembly-CSharp-vs.csproj
+Switcheroo.sln
+Switcheroo.v11.suo
+Switcheroo-csharp.sln
