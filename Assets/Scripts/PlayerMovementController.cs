@@ -155,5 +155,13 @@ public class PlayerMovementController : Killable
 	{
 		PlayerAudio.PlayOneShot(WarpSound);
 	}
+
+	private void OnCollisionEnter2D(Collision2D other)
+	{
+		// cast a ray to make sure it's at "eye level" (don't switch directions for landing on the floor)
+		if (other.gameObject.GetComponent<SwitchTarget>())
+			OnKilled();
+		
+	}
 }
 
