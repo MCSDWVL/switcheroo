@@ -20,7 +20,7 @@ public class ProceduralMusic : MonoBehaviour
 	void Awake()
 	{
 		musicTrack = (3 + Application.loadedLevel) % numTracks;
-		AudioSettings.outputSampleRate = (int)sampling_frequency;
+		//AudioSettings.outputSampleRate = (int)sampling_frequency;
 	}
 
 	void Update()
